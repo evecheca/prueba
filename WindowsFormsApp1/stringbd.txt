@@ -1,0 +1,4 @@
+DESKTOP-VFUQVSN\SQLEXPRESS
+
+
+Data Source=DESKTOP-VFUQVSN\SQLEXPRESS;Initial Catalog=CarrerasBD;Integrated Security=True

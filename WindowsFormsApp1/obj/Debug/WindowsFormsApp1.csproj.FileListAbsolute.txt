@@ -1,0 +1,11 @@
+C:\Users\evech\Downloads\Carrera0309\prueba\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+C:\Users\evech\Downloads\Carrera0309\prueba\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Formularios.FrmNuevoCarrera.resources
+C:\Users\evech\Downloads\Carrera0309\prueba\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Formularios.FrmPrincipal.resources
+C:\Users\evech\Downloads\Carrera0309\prueba\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\evech\Downloads\Carrera0309\prueba\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\evech\Downloads\Carrera0309\prueba\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\evech\Downloads\Carrera0309\prueba\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\evech\Downloads\Carrera0309\prueba\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\evech\Downloads\Carrera0309\prueba\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\evech\Downloads\Carrera0309\prueba\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\evech\Downloads\Carrera0309\prueba\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
