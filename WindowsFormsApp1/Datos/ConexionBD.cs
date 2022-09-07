@@ -113,7 +113,18 @@ namespace WindowsFormsApp1.Datos
 
 
 
+        public bool EliminarCarrera(int id_carrera)
+        {
+            cnn.Open();
+           SqlCommand cmd = new SqlCommand("sp_registrar_baja_carrera", cnn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@id_carrera", id_carrera);
+            int filas = cmd.ExecuteNonQuery();
+            cnn.Close();
 
+            return filas == 1;
+
+        }
 
 
 

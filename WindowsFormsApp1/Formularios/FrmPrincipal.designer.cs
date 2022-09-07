@@ -34,9 +34,9 @@ namespace WindowsFormsApp1.Formularios
             this.sALIRToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cARRERASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nUEVOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bAJAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aSIGNATURASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bAJAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -84,6 +84,13 @@ namespace WindowsFormsApp1.Formularios
             this.nUEVOToolStripMenuItem.Text = "NUEVO";
             this.nUEVOToolStripMenuItem.Click += new System.EventHandler(this.nUEVOToolStripMenuItem_Click);
             // 
+            // bAJAToolStripMenuItem
+            // 
+            this.bAJAToolStripMenuItem.Name = "bAJAToolStripMenuItem";
+            this.bAJAToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.bAJAToolStripMenuItem.Text = "BAJA";
+            this.bAJAToolStripMenuItem.Click += new System.EventHandler(this.bAJAToolStripMenuItem_Click);
+            // 
             // aSIGNATURASToolStripMenuItem
             // 
             this.aSIGNATURASToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -98,13 +105,6 @@ namespace WindowsFormsApp1.Formularios
             this.consultarToolStripMenuItem.Size = new System.Drawing.Size(189, 34);
             this.consultarToolStripMenuItem.Text = "Consultar";
             // 
-            // bAJAToolStripMenuItem
-            // 
-            this.bAJAToolStripMenuItem.Name = "bAJAToolStripMenuItem";
-            this.bAJAToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
-            this.bAJAToolStripMenuItem.Text = "BAJA";
-            //this.bAJAToolStripMenuItem.Click += new System.EventHandler(this.bAJAToolStripMenuItem_Click);
-            //// 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);

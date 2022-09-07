@@ -90,15 +90,45 @@ begin
 	order by id_carrera
 end
 
-create proc sp_consultar_detalleCarreras
+ ALTER procedure  sp_consultar_detalleCarreras
 as
 begin
-	select c.nombre as 'Carrera',
+	select c.id_carrera 'codigo',c.nombre as 'Carrera',c.titulo 'titulo',
 	a.nombre as 'Nombre Asignatura',
 	dc.anio_cursado as 'Año Cursado', 
 	dc.cuatrimestre as 'Cuatrimestre'
 	from detalleCarreras as dc 
 	inner join asignaturas as a on dc.id_asignatura = a.id_asignatura
 	inner join carreras as c on dc.id_carrera = c.id_carrera
+	WHERE c.eliminado=1
 	order by c.id_carrera
 end
+
+Alter table Carreras
+ADD eliminado bit null
+
+CREATE PROCEDURE sp_registrar_baja_carrera
+ @id_carrera int
+ As
+ begin
+ Update Carreras 
+ SET eliminado=1
+ Where id_Carrera= @id_carrera
+ end
+
+ select*from Carreras
+
+Alter table Carreras
+ADD  eliminado int
+
+ UPDATE Carreras
+ SET eliminado= 0
+
+ alter procedure SP_MostrarCarrera
+ 
+ As
+ begin select *from Carrera 
+ where eliminado=1
+ end
+
+ execute sp_consultar_detalleCarreras

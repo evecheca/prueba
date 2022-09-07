@@ -28,6 +28,12 @@ namespace WindowsFormsApp1.Formularios
             nuevoCarrera.ShowDialog();
         }
 
+        private void bAJAToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmBajaCarrera bajaCarrera = new FrmBajaCarrera();
+            bajaCarrera.ShowDialog();
+        }
+
         //private void bAJAToolStripMenuItem_Click(object sender, EventArgs e)
         //{
         //    FrmaBajaCarrera BajaCarrera = new FrmaBajaCarrera();
