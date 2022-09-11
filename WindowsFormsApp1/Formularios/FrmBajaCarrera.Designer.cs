@@ -32,8 +32,12 @@ namespace WindowsFormsApp1.Formularios
             this.cboCarreras = new System.Windows.Forms.ComboBox();
             this.lblCarrera = new System.Windows.Forms.Label();
             this.btnBaja = new System.Windows.Forms.Button();
-            this.lstDetallesCarrera = new System.Windows.Forms.ListBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnConsultar = new System.Windows.Forms.Button();
+            this.dgvCarreraDetalle = new System.Windows.Forms.DataGridView();
+            this.colid = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colnombreCarrera = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colTitulo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCarreraDetalle)).BeginInit();
             this.SuspendLayout();
             // 
             // cboCarreras
@@ -64,39 +68,71 @@ namespace WindowsFormsApp1.Formularios
             this.btnBaja.UseVisualStyleBackColor = true;
             this.btnBaja.Click += new System.EventHandler(this.btnBaja_Click);
             // 
-            // lstDetallesCarrera
+            // btnConsultar
             // 
-            this.lstDetallesCarrera.FormattingEnabled = true;
-            this.lstDetallesCarrera.ItemHeight = 20;
-            this.lstDetallesCarrera.Location = new System.Drawing.Point(150, 203);
-            this.lstDetallesCarrera.Name = "lstDetallesCarrera";
-            this.lstDetallesCarrera.Size = new System.Drawing.Size(475, 204);
-            this.lstDetallesCarrera.TabIndex = 3;
-            //this.lstDetallesCarrera.SelectedIndexChanged += new System.EventHandler(this.button1_Click);
+            this.btnConsultar.Location = new System.Drawing.Point(675, 238);
+            this.btnConsultar.Name = "btnConsultar";
+            this.btnConsultar.Size = new System.Drawing.Size(93, 51);
+            this.btnConsultar.TabIndex = 4;
+            this.btnConsultar.Text = "Consultar";
+            this.btnConsultar.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // dgvCarreraDetalle
             // 
-            this.button1.Location = new System.Drawing.Point(675, 238);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(93, 51);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            //this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.dgvCarreraDetalle.AllowUserToAddRows = false;
+            this.dgvCarreraDetalle.AllowUserToDeleteRows = false;
+            this.dgvCarreraDetalle.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCarreraDetalle.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.colid,
+            this.colnombreCarrera,
+            this.colTitulo});
+            this.dgvCarreraDetalle.Location = new System.Drawing.Point(32, 238);
+            this.dgvCarreraDetalle.Name = "dgvCarreraDetalle";
+            this.dgvCarreraDetalle.ReadOnly = true;
+            this.dgvCarreraDetalle.RowHeadersWidth = 62;
+            this.dgvCarreraDetalle.RowTemplate.Height = 28;
+            this.dgvCarreraDetalle.Size = new System.Drawing.Size(563, 200);
+            this.dgvCarreraDetalle.TabIndex = 5;
+            // 
+            // colid
+            // 
+            this.colid.HeaderText = "id";
+            this.colid.MinimumWidth = 8;
+            this.colid.Name = "colid";
+            this.colid.ReadOnly = true;
+            this.colid.Visible = false;
+            this.colid.Width = 150;
+            // 
+            // colnombreCarrera
+            // 
+            this.colnombreCarrera.HeaderText = "Nombre Carrera";
+            this.colnombreCarrera.MinimumWidth = 8;
+            this.colnombreCarrera.Name = "colnombreCarrera";
+            this.colnombreCarrera.ReadOnly = true;
+            this.colnombreCarrera.Width = 150;
+            // 
+            // colTitulo
+            // 
+            this.colTitulo.HeaderText = "Titulo";
+            this.colTitulo.MinimumWidth = 8;
+            this.colTitulo.Name = "colTitulo";
+            this.colTitulo.ReadOnly = true;
+            this.colTitulo.Width = 150;
             // 
             // FrmBajaCarrera
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.lstDetallesCarrera);
+            this.Controls.Add(this.dgvCarreraDetalle);
+            this.Controls.Add(this.btnConsultar);
             this.Controls.Add(this.btnBaja);
             this.Controls.Add(this.lblCarrera);
             this.Controls.Add(this.cboCarreras);
             this.Name = "FrmBajaCarrera";
             this.Text = "FrmBajaCarrera";
             this.Load += new System.EventHandler(this.FrmBajaCarrera_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCarreraDetalle)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -107,7 +143,10 @@ namespace WindowsFormsApp1.Formularios
         private System.Windows.Forms.ComboBox cboCarreras;
         private System.Windows.Forms.Label lblCarrera;
         private System.Windows.Forms.Button btnBaja;
-        private System.Windows.Forms.ListBox lstDetallesCarrera;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnConsultar;
+        private System.Windows.Forms.DataGridView dgvCarreraDetalle;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colid;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colnombreCarrera;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colTitulo;
     }
 }

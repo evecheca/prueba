@@ -5,21 +5,32 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using WindowsFormsApp1.Dominio;
 
 namespace WindowsFormsApp1.Datos
 {
-    class ConexionBD
+    class ConexionBDao
     {
         SqlConnection cnn;
+        public static ConexionBDao instancia;
 
-        public ConexionBD()
+        private ConexionBDao()
         {
             cnn = new SqlConnection(Properties.Resources.Conexionstring);
 
         }
 
+        public  static ConexionBDao ObtenerInstancia()
+        {
+            if (instancia == null)
+            {
+                instancia = new ConexionBDao();
+            }
 
+            return instancia;
+
+        }
 
 
         public DataTable ConsultarTablas(string nombresp)
@@ -115,6 +126,7 @@ namespace WindowsFormsApp1.Datos
 
         public bool EliminarCarrera(int id_carrera)
         {
+            bool eliminado = true;
             cnn.Open();
            SqlCommand cmd = new SqlCommand("sp_registrar_baja_carrera", cnn);
             cmd.CommandType = CommandType.StoredProcedure;
@@ -122,9 +134,59 @@ namespace WindowsFormsApp1.Datos
             int filas = cmd.ExecuteNonQuery();
             cnn.Close();
 
-            return filas == 1;
+            if( filas == 1)
+            {
+               MessageBox.Show("Se elimino con exito!", "Notificacion", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                
+            }
+            else
+            {
+                MessageBox.Show("Se produjo un error no se elimino ", "Información", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                eliminado = false;
+            }
 
+
+            return eliminado;
+        
+        
         }
+
+
+        public DataTable ConsultarPlanCarrera(string nombre)
+        {
+            DataTable tabla = new DataTable();
+            cnn.Open();
+            SqlCommand cmd = new SqlCommand("SP_MostrarCarrera", cnn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@nombre", nombre);
+
+            tabla.Load(cmd.ExecuteReader());
+            cnn.Close();
+            return tabla;
+        }
+
+
+        public DataTable ConsultaSQL(string spNombre, List<Parametro> values)
+        {
+            DataTable tabla = new DataTable();
+
+            cnn.Open();
+            SqlCommand cmd = new SqlCommand(spNombre, cnn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            if (values != null)
+            {
+                foreach (Parametro oParametro in values)
+                {
+                    cmd.Parameters.AddWithValue(oParametro.Clave, oParametro.Valor);
+                }
+            }
+            tabla.Load(cmd.ExecuteReader());
+            cnn.Close();
+
+            return tabla;
+        }
+
+
 
 
 

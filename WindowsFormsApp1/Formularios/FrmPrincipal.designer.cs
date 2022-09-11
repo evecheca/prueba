@@ -37,6 +37,7 @@ namespace WindowsFormsApp1.Formularios
             this.bAJAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aSIGNATURASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cONSULTARToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,14 +66,15 @@ namespace WindowsFormsApp1.Formularios
             // sALIRToolStripMenuItem
             // 
             this.sALIRToolStripMenuItem.Name = "sALIRToolStripMenuItem";
-            this.sALIRToolStripMenuItem.Size = new System.Drawing.Size(160, 34);
+            this.sALIRToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.sALIRToolStripMenuItem.Text = "SALIR";
             // 
             // cARRERASToolStripMenuItem
             // 
             this.cARRERASToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.nUEVOToolStripMenuItem,
-            this.bAJAToolStripMenuItem});
+            this.bAJAToolStripMenuItem,
+            this.cONSULTARToolStripMenuItem1});
             this.cARRERASToolStripMenuItem.Name = "cARRERASToolStripMenuItem";
             this.cARRERASToolStripMenuItem.Size = new System.Drawing.Size(115, 29);
             this.cARRERASToolStripMenuItem.Text = "CARRERAS";
@@ -105,6 +107,13 @@ namespace WindowsFormsApp1.Formularios
             this.consultarToolStripMenuItem.Size = new System.Drawing.Size(189, 34);
             this.consultarToolStripMenuItem.Text = "Consultar";
             // 
+            // cONSULTARToolStripMenuItem1
+            // 
+            this.cONSULTARToolStripMenuItem1.Name = "cONSULTARToolStripMenuItem1";
+            this.cONSULTARToolStripMenuItem1.Size = new System.Drawing.Size(270, 34);
+            this.cONSULTARToolStripMenuItem1.Text = "CONSULTAR";
+            this.cONSULTARToolStripMenuItem1.Click += new System.EventHandler(this.cONSULTARToolStripMenuItem1_Click);
+            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -131,6 +140,7 @@ namespace WindowsFormsApp1.Formularios
         private System.Windows.Forms.ToolStripMenuItem aSIGNATURASToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem bAJAToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cONSULTARToolStripMenuItem1;
     }
 }
 

@@ -14,10 +14,11 @@ namespace WindowsFormsApp1.Formularios
 {
     public partial class FrmBajaCarrera : Form
     {
-        ConexionBD helper;
+        ConexionBDao helper;
+
         public FrmBajaCarrera()
         {
-            helper = new ConexionBD();
+            
             InitializeComponent();
         }
 
@@ -33,6 +34,7 @@ namespace WindowsFormsApp1.Formularios
                    helper.EliminarCarrera(id_carrera);
                 }
             }
+       
         }
 
         private void FrmBajaCarrera_Load(object sender, EventArgs e)
@@ -47,48 +49,46 @@ namespace WindowsFormsApp1.Formularios
 
 
         }
-   
-    /* Da error y no carga la lista ver!
-      //public void CargarLista()
-      //  {
-      //      DataTable tabla = helper.ConsultarTablas("sp_consultar_detalleCarreras");
 
-      //      lstDetallesCarrera.Items.Clear();
-      //      foreach(DataRow row in tabla.Rows)
-      //      {
-      //          PLanCarrera carrera = new PLanCarrera();
-      //          carrera.Id_Carrera= Convert.ToInt32(row["codigo"].ToString()); 
-      //          carrera.Nombre_Carrera = row["Carrera"].ToString();
-      //          carrera.Titulo= row["titulo"].ToString();
+        private void btnConsultar_Click(object sender, EventArgs e)
+        {
+            if (cboCarreras.SelectedIndex != -1)
+            {
+                string carrera = cboCarreras.Text;
+               
 
-      //          int aniocursado = Convert.ToInt32(row["Año Cursado"].ToString());
-      //          int cuatrimestre = Convert.ToInt32(row["Cuatrimestre"].ToString());
 
-      //          Asignatura materia = new Asignatura();
-      //          materia.Id_Asignatura = Convert.ToInt32(row["codigo asignatura"].ToString());
-      //          materia.Nombre= row["Nombre Asignatura"].ToString();
-      //          DetalleCarrera detalle=new DetalleCarrera(aniocursado,cuatrimestre,materia);
+                string sp = "SP_CONSULTARCar";
+
+                List<Parametro> lst = new List<Parametro>();
                 
-
-      //          lstDetallesCarrera.Items.Add(carrera);
                 
+                lst.Add(new Parametro("@nombre", cboCarreras.Text));
+
+                dgvCarreraDetalle.Rows.Clear();
+                DataTable dt = helper.ConsultaSQL(sp, lst);
+                foreach (DataRow fila in dt.Rows)
+                {
+                    dgvCarreraDetalle.Rows.Add(new object[] {
+                    fila["Nombre Carrera"].ToString(),
+                    fila["Titulo"].ToString(),
+                    });
+                    
+                }
+            }
+
+        }
 
 
 
-      //      }
+        
 
 
-        //}
 
-        //private void button1_Click(object sender, EventArgs e)
-        //{
-        //    if (lstDetallesCarrera.SelectedIndex != -1)
-        //    {
-        //        PLanCarrera carrera = (PLanCarrera)cboCarreras.SelectedItem;
 
-        //        cboCarreras.SelectedValue = carrera.Id_Carrera;
-        //        cboCarreras.Text = carrera.Nombre_Carrera;
-        //    }
-        //}
+     
     }
 }
+
+
+

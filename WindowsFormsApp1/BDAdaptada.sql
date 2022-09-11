@@ -94,7 +94,8 @@ end
 as
 begin
 	select c.id_carrera 'codigo',c.nombre as 'Carrera',c.titulo 'titulo',
-	a.nombre as 'Nombre Asignatura',
+	a.id_asignatura 'codigo asignatura',
+	a.nombre  'Nombre Asignatura',
 	dc.anio_cursado as 'Año Cursado', 
 	dc.cuatrimestre as 'Cuatrimestre'
 	from detalleCarreras as dc 
@@ -132,3 +133,10 @@ ADD  eliminado int
  end
 
  execute sp_consultar_detalleCarreras
+
+
+ Select anio_cursado 'Año' , cuatrimestre 'cuatrimestre',c.id_carrera 'codigo carrera',c.nombre 'nombre de Carrera',a.id_asignatura 'codigo de materia', a.nombre 'nombre asignatura'
+from DetalleCarreras dc join Asignaturas as a on dc.id_asignatura=a.id_asignatura 
+join Carreras as c on c.id_carrera=dc.id_carrera
+
+group by anio_cursado,cuatrimestre, c.id_carrera,c.nombre,a.id_asignatura,a.nombre 

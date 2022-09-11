@@ -34,6 +34,11 @@ namespace WindowsFormsApp1.Formularios
             bajaCarrera.ShowDialog();
         }
 
+        private void cONSULTARToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            new FrmReporteAgrupado().ShowDialog(); 
+        }
+
         //private void bAJAToolStripMenuItem_Click(object sender, EventArgs e)
         //{
         //    FrmaBajaCarrera BajaCarrera = new FrmaBajaCarrera();

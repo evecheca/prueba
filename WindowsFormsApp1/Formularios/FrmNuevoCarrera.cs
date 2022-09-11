@@ -16,11 +16,11 @@ namespace WindowsFormsApp1.Formularios
 {
     public partial class FrmNuevoCarrera : Form
     {
-        private ConexionBD helper;
+        private ConexionBDao helper;
         private PLanCarrera oPLanCarrera;
         public FrmNuevoCarrera()
         {
-            helper = new ConexionBD();
+            
             oPLanCarrera = new PLanCarrera();
             InitializeComponent();
         }

@@ -88,3 +88,4 @@ C:\Users\evech\Downloads\Carrera0309\prueba\WindowsFormsApp1\obj\Debug\WindowsFo
 C:\Users\evech\Downloads\Carrera0309\prueba\WindowsFormsApp1\obj\Debug\RdlCompile.cache
 C:\Users\evech\Downloads\Carrera0309\prueba\WindowsFormsApp1\obj\Debug\RdlCompile.compiled
 C:\Users\evech\Downloads\Carrera0309\prueba\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
+C:\Users\evech\Downloads\Carrera0309\prueba\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Formularios.FrmReporteAgrupado.resources
