@@ -16,7 +16,7 @@ namespace WindowsFormsApp1.Formularios
 {
     public partial class FrmNuevoCarrera : Form
     {
-        private ConexionBDao helper;
+        ConexionBDao helper=ConexionBDao.ObtenerInstancia();
         private PLanCarrera oPLanCarrera;
         public FrmNuevoCarrera()
         {

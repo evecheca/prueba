@@ -279,13 +279,13 @@ namespace WindowsFormsApp1.Reportes {
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class DataTable1DataTable : global::System.Data.TypedTableBase<DataTable1Row> {
             
-            private global::System.Data.DataColumn columnNombre_Carrera;
+            private global::System.Data.DataColumn columnDataColumn1;
             
-            private global::System.Data.DataColumn columnTitulo;
+            private global::System.Data.DataColumn columnDataColumn2;
             
-            private global::System.Data.DataColumn columnAsignatura;
+            private global::System.Data.DataColumn columnDataColumn3;
             
-            private global::System.Data.DataColumn columncuatrimestre;
+            private global::System.Data.DataColumn columnDataColumn4;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
@@ -322,33 +322,33 @@ namespace WindowsFormsApp1.Reportes {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn Nombre_CarreraColumn {
+            public global::System.Data.DataColumn DataColumn1Column {
                 get {
-                    return this.columnNombre_Carrera;
+                    return this.columnDataColumn1;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn TituloColumn {
+            public global::System.Data.DataColumn DataColumn2Column {
                 get {
-                    return this.columnTitulo;
+                    return this.columnDataColumn2;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn AsignaturaColumn {
+            public global::System.Data.DataColumn DataColumn3Column {
                 get {
-                    return this.columnAsignatura;
+                    return this.columnDataColumn3;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn cuatrimestreColumn {
+            public global::System.Data.DataColumn DataColumn4Column {
                 get {
-                    return this.columncuatrimestre;
+                    return this.columnDataColumn4;
                 }
             }
             
@@ -389,13 +389,13 @@ namespace WindowsFormsApp1.Reportes {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public DataTable1Row AddDataTable1Row(string Nombre_Carrera, string Titulo, string Asignatura, string cuatrimestre) {
+            public DataTable1Row AddDataTable1Row(string DataColumn1, string DataColumn2, string DataColumn3, string DataColumn4) {
                 DataTable1Row rowDataTable1Row = ((DataTable1Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        Nombre_Carrera,
-                        Titulo,
-                        Asignatura,
-                        cuatrimestre};
+                        DataColumn1,
+                        DataColumn2,
+                        DataColumn3,
+                        DataColumn4};
                 rowDataTable1Row.ItemArray = columnValuesArray;
                 this.Rows.Add(rowDataTable1Row);
                 return rowDataTable1Row;
@@ -418,23 +418,23 @@ namespace WindowsFormsApp1.Reportes {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal void InitVars() {
-                this.columnNombre_Carrera = base.Columns["Nombre Carrera"];
-                this.columnTitulo = base.Columns["Titulo"];
-                this.columnAsignatura = base.Columns["Asignatura"];
-                this.columncuatrimestre = base.Columns["cuatrimestre"];
+                this.columnDataColumn1 = base.Columns["DataColumn1"];
+                this.columnDataColumn2 = base.Columns["DataColumn2"];
+                this.columnDataColumn3 = base.Columns["DataColumn3"];
+                this.columnDataColumn4 = base.Columns["DataColumn4"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             private void InitClass() {
-                this.columnNombre_Carrera = new global::System.Data.DataColumn("Nombre Carrera", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnNombre_Carrera);
-                this.columnTitulo = new global::System.Data.DataColumn("Titulo", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnTitulo);
-                this.columnAsignatura = new global::System.Data.DataColumn("Asignatura", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnAsignatura);
-                this.columncuatrimestre = new global::System.Data.DataColumn("cuatrimestre", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columncuatrimestre);
+                this.columnDataColumn1 = new global::System.Data.DataColumn("DataColumn1", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDataColumn1);
+                this.columnDataColumn2 = new global::System.Data.DataColumn("DataColumn2", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDataColumn2);
+                this.columnDataColumn3 = new global::System.Data.DataColumn("DataColumn3", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDataColumn3);
+                this.columnDataColumn4 = new global::System.Data.DataColumn("DataColumn4", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDataColumn4);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -577,114 +577,114 @@ namespace WindowsFormsApp1.Reportes {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string Nombre_Carrera {
+            public string DataColumn1 {
                 get {
                     try {
-                        return ((string)(this[this.tableDataTable1.Nombre_CarreraColumn]));
+                        return ((string)(this[this.tableDataTable1.DataColumn1Column]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Nombre Carrera\' de la tabla \'DataTable1\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'DataColumn1\' de la tabla \'DataTable1\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableDataTable1.Nombre_CarreraColumn] = value;
+                    this[this.tableDataTable1.DataColumn1Column] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string Titulo {
+            public string DataColumn2 {
                 get {
                     try {
-                        return ((string)(this[this.tableDataTable1.TituloColumn]));
+                        return ((string)(this[this.tableDataTable1.DataColumn2Column]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Titulo\' de la tabla \'DataTable1\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'DataColumn2\' de la tabla \'DataTable1\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableDataTable1.TituloColumn] = value;
+                    this[this.tableDataTable1.DataColumn2Column] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string Asignatura {
+            public string DataColumn3 {
                 get {
                     try {
-                        return ((string)(this[this.tableDataTable1.AsignaturaColumn]));
+                        return ((string)(this[this.tableDataTable1.DataColumn3Column]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Asignatura\' de la tabla \'DataTable1\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'DataColumn3\' de la tabla \'DataTable1\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableDataTable1.AsignaturaColumn] = value;
+                    this[this.tableDataTable1.DataColumn3Column] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string cuatrimestre {
+            public string DataColumn4 {
                 get {
                     try {
-                        return ((string)(this[this.tableDataTable1.cuatrimestreColumn]));
+                        return ((string)(this[this.tableDataTable1.DataColumn4Column]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'cuatrimestre\' de la tabla \'DataTable1\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'DataColumn4\' de la tabla \'DataTable1\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableDataTable1.cuatrimestreColumn] = value;
+                    this[this.tableDataTable1.DataColumn4Column] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsNombre_CarreraNull() {
-                return this.IsNull(this.tableDataTable1.Nombre_CarreraColumn);
+            public bool IsDataColumn1Null() {
+                return this.IsNull(this.tableDataTable1.DataColumn1Column);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetNombre_CarreraNull() {
-                this[this.tableDataTable1.Nombre_CarreraColumn] = global::System.Convert.DBNull;
+            public void SetDataColumn1Null() {
+                this[this.tableDataTable1.DataColumn1Column] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsTituloNull() {
-                return this.IsNull(this.tableDataTable1.TituloColumn);
+            public bool IsDataColumn2Null() {
+                return this.IsNull(this.tableDataTable1.DataColumn2Column);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetTituloNull() {
-                this[this.tableDataTable1.TituloColumn] = global::System.Convert.DBNull;
+            public void SetDataColumn2Null() {
+                this[this.tableDataTable1.DataColumn2Column] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsAsignaturaNull() {
-                return this.IsNull(this.tableDataTable1.AsignaturaColumn);
+            public bool IsDataColumn3Null() {
+                return this.IsNull(this.tableDataTable1.DataColumn3Column);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetAsignaturaNull() {
-                this[this.tableDataTable1.AsignaturaColumn] = global::System.Convert.DBNull;
+            public void SetDataColumn3Null() {
+                this[this.tableDataTable1.DataColumn3Column] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IscuatrimestreNull() {
-                return this.IsNull(this.tableDataTable1.cuatrimestreColumn);
+            public bool IsDataColumn4Null() {
+                return this.IsNull(this.tableDataTable1.DataColumn4Column);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetcuatrimestreNull() {
-                this[this.tableDataTable1.cuatrimestreColumn] = global::System.Convert.DBNull;
+            public void SetDataColumn4Null() {
+                this[this.tableDataTable1.DataColumn4Column] = global::System.Convert.DBNull;
             }
         }
         

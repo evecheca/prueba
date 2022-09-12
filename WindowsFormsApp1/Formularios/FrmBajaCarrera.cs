@@ -14,7 +14,7 @@ namespace WindowsFormsApp1.Formularios
 {
     public partial class FrmBajaCarrera : Form
     {
-        ConexionBDao helper;
+        ConexionBDao helper =ConexionBDao.ObtenerInstancia();
 
         public FrmBajaCarrera()
         {
@@ -22,6 +22,7 @@ namespace WindowsFormsApp1.Formularios
             InitializeComponent();
         }
 
+      
         private void btnBaja_Click(object sender, EventArgs e)
         {
             if (cboCarreras.SelectedIndex != -1)

@@ -9,7 +9,7 @@ namespace WindowsFormsApp1.Dominio
     class Colas: ICollection
     {
       List<Object>ListaObjectos;
-        int contador;
+        
 
 
         public Colas()

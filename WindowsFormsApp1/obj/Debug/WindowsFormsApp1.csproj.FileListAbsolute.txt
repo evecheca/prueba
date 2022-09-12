@@ -89,3 +89,13 @@ C:\Users\evech\Downloads\Carrera0309\prueba\WindowsFormsApp1\obj\Debug\RdlCompil
 C:\Users\evech\Downloads\Carrera0309\prueba\WindowsFormsApp1\obj\Debug\RdlCompile.compiled
 C:\Users\evech\Downloads\Carrera0309\prueba\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
 C:\Users\evech\Downloads\Carrera0309\prueba\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Formularios.FrmReporteAgrupado.resources
+C:\Users\evech\Downloads\Carrera0309\prueba\WindowsFormsApp1\bin\Debug\DryIoc.dll
+C:\Users\evech\Downloads\Carrera0309\prueba\WindowsFormsApp1\bin\Debug\DryIoc.WebApi.dll
+C:\Users\evech\Downloads\Carrera0309\prueba\WindowsFormsApp1\bin\Debug\Newtonsoft.Json.dll
+C:\Users\evech\Downloads\Carrera0309\prueba\WindowsFormsApp1\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\evech\Downloads\Carrera0309\prueba\WindowsFormsApp1\bin\Debug\System.Web.Http.dll
+C:\Users\evech\Downloads\Carrera0309\prueba\WindowsFormsApp1\bin\Debug\DryIoc.xml
+C:\Users\evech\Downloads\Carrera0309\prueba\WindowsFormsApp1\bin\Debug\DryIoc.WebApi.xml
+C:\Users\evech\Downloads\Carrera0309\prueba\WindowsFormsApp1\bin\Debug\Newtonsoft.Json.xml
+C:\Users\evech\Downloads\Carrera0309\prueba\WindowsFormsApp1\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\evech\Downloads\Carrera0309\prueba\WindowsFormsApp1\bin\Debug\System.Web.Http.xml

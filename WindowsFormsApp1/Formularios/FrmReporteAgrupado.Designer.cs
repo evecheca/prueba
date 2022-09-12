@@ -37,18 +37,20 @@ namespace WindowsFormsApp1.Formularios
             this.dtpDesde = new System.Windows.Forms.DateTimePicker();
             this.dtpHasta = new System.Windows.Forms.DateTimePicker();
             this.btnGenerar = new System.Windows.Forms.Button();
-            this.dataSet1 = new WindowsFormsApp1.Reportes.DataSet1();
             this.dataTable1BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
+            this.dataSet1 = new WindowsFormsApp1.Reportes.DataSet1();
+            this.dataTable1BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataTable1BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTable1BindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // rpvAgrupado
             // 
             reportDataSource1.Name = "DataSet1";
-            reportDataSource1.Value = this.dataTable1BindingSource;
+            reportDataSource1.Value = this.dataTable1BindingSource1;
             this.rpvAgrupado.LocalReport.DataSources.Add(reportDataSource1);
-            this.rpvAgrupado.LocalReport.ReportEmbeddedResource = "WindowsFormsApp1.Reportes.RepAgrupado.rdlc";
+            this.rpvAgrupado.LocalReport.ReportEmbeddedResource = "WindowsFormsApp1.Reportes.RpvAgrupado.rdlc";
             this.rpvAgrupado.Location = new System.Drawing.Point(12, 137);
             this.rpvAgrupado.Name = "rpvAgrupado";
             this.rpvAgrupado.ServerReport.BearerToken = null;
@@ -97,15 +99,21 @@ namespace WindowsFormsApp1.Formularios
             this.btnGenerar.UseVisualStyleBackColor = true;
             this.btnGenerar.Click += new System.EventHandler(this.btnGenerar_Click);
             // 
+            // dataTable1BindingSource
+            // 
+            this.dataTable1BindingSource.DataMember = "DataTable1";
+            this.dataTable1BindingSource.DataSource = this.dataSet1;
+            this.dataTable1BindingSource.CurrentChanged += new System.EventHandler(this.dataTable1BindingSource_CurrentChanged);
+            // 
             // dataSet1
             // 
             this.dataSet1.DataSetName = "DataSet1";
             this.dataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // dataTable1BindingSource
+            // dataTable1BindingSource1
             // 
-            this.dataTable1BindingSource.DataMember = "DataTable1";
-            this.dataTable1BindingSource.DataSource = this.dataSet1;
+            this.dataTable1BindingSource1.DataMember = "DataTable1";
+            this.dataTable1BindingSource1.DataSource = this.dataSet1;
             // 
             // FrmReporteAgrupado
             // 
@@ -121,8 +129,9 @@ namespace WindowsFormsApp1.Formularios
             this.Name = "FrmReporteAgrupado";
             this.Text = "FrmReporteAgrupado";
             this.Load += new System.EventHandler(this.FrmReporteAgrupado_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataTable1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTable1BindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -138,5 +147,6 @@ namespace WindowsFormsApp1.Formularios
         private System.Windows.Forms.Button btnGenerar;
         private System.Windows.Forms.BindingSource dataTable1BindingSource;
         private Reportes.DataSet1 dataSet1;
+        private System.Windows.Forms.BindingSource dataTable1BindingSource1;
     }
 }
